@@ -15,7 +15,16 @@ class AuthVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
     
-
+    @IBAction func loginWithFBButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func loginWithGmailButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func loginWithEmailButtonTapped(_ sender: Any) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
+        present(loginVC!, animated: true, completion: nil)
+    }
+    
 }

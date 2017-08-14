@@ -23,6 +23,7 @@
 		AC2E37F11F4233B60096FAF5 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37F01F4233B60096FAF5 /* InsetTextField.swift */; };
 		AC2E37F31F4234DC0096FAF5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37F21F4234DC0096FAF5 /* AuthVC.swift */; };
 		AC2E37F51F4236630096FAF5 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37F41F4236630096FAF5 /* ShadowView.swift */; };
+		AC2E37F71F423C730096FAF5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37F61F423C730096FAF5 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AC2E37F01F4233B60096FAF5 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		AC2E37F21F4234DC0096FAF5 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		AC2E37F41F4236630096FAF5 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		AC2E37F61F423C730096FAF5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		BA3235496A2586A1C6639A0D /* Pods-iMonoCommute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMonoCommute.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMonoCommute/Pods-iMonoCommute.release.xcconfig"; sourceTree = "<group>"; };
 		F84E750E9A556438E8826712 /* Pods-iMonoCommute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMonoCommute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMonoCommute/Pods-iMonoCommute.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2E37E41F4225C10096FAF5 /* DataService.swift */,
+				AC2E37F61F423C730096FAF5 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				AC2E37F31F4234DC0096FAF5 /* AuthVC.swift in Sources */,
 				AC2E37F51F4236630096FAF5 /* ShadowView.swift in Sources */,
 				AC2E37CE1F4222270096FAF5 /* SecondViewController.swift in Sources */,
+				AC2E37F71F423C730096FAF5 /* AuthService.swift in Sources */,
 				AC2E37ED1F422DDD0096FAF5 /* CircleImage.swift in Sources */,
 				AC2E37CA1F4222270096FAF5 /* AppDelegate.swift in Sources */,
 				AC2E37E91F422B8C0096FAF5 /* LoginVC.swift in Sources */,

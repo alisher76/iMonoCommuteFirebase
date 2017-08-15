@@ -17,7 +17,7 @@
         <!--feed-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FeedVC" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -60,15 +60,52 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.27949094769999999" green="0.72862249609999996" blue="0.99901396040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Bfn-Pa-xfL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="feedCell" rowHeight="100" id="Bfn-Pa-xfL" customClass="FeedCell" customModule="iMonoCommute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bfn-Pa-xfL" id="3Av-C9-9qx">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="B68-l8-57U" customClass="CircleImage" customModule="iMonoCommute" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="19" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="3ap-Hc-2sv"/>
+                                                        <constraint firstAttribute="height" constant="60" id="hWx-K1-EZf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns2-IE-6kY">
+                                                    <rect key="frame" x="76" y="21.000000000000004" width="47.666666666666671" height="22.333333333333339"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw0-7f-BE8">
+                                                    <rect key="frame" x="76" y="50" width="320" height="19.666666666666671"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="320" id="EFO-5B-4FT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Bw0-7f-BE8" firstAttribute="top" secondItem="Ns2-IE-6kY" secondAttribute="bottom" constant="6.6666666666666643" id="8Qn-fN-1zI"/>
+                                                <constraint firstItem="B68-l8-57U" firstAttribute="top" secondItem="3Av-C9-9qx" secondAttribute="top" constant="19" id="9ji-J4-dRL"/>
+                                                <constraint firstItem="Ns2-IE-6kY" firstAttribute="top" secondItem="3Av-C9-9qx" secondAttribute="top" constant="21" id="BqQ-6T-ED4"/>
+                                                <constraint firstItem="Bw0-7f-BE8" firstAttribute="leading" secondItem="B68-l8-57U" secondAttribute="trailing" constant="8" id="cU8-UA-S59"/>
+                                                <constraint firstItem="B68-l8-57U" firstAttribute="leading" secondItem="3Av-C9-9qx" secondAttribute="leading" constant="8" id="pgY-7e-QlB"/>
+                                                <constraint firstItem="Ns2-IE-6kY" firstAttribute="leading" secondItem="B68-l8-57U" secondAttribute="trailing" constant="8" id="vsE-8j-caN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="Bw0-7f-BE8" id="iAI-In-RUZ"/>
+                                            <outlet property="nameLabel" destination="Ns2-IE-6kY" id="CUO-Ta-NyG"/>
+                                            <outlet property="profileImage" destination="B68-l8-57U" id="H1f-Zf-96H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -93,6 +130,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <tabBarItem key="tabBarItem" title="feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="qV9-OM-gD2" id="cbq-4F-POF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +248,7 @@
         <!--Groups-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="GroupsVC" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>

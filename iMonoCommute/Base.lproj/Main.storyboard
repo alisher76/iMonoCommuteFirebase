@@ -138,7 +138,7 @@
                                     <constraint firstItem="spH-ME-UG3" firstAttribute="top" secondItem="B74-jt-jzj" secondAttribute="top" constant="28" id="NZX-yE-4pv"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-xn-93D">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-xn-93D">
                                 <rect key="frame" x="12" y="74" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="ZnJ-BT-OqR"/>
@@ -320,7 +320,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cpp-QD-56t">
                                         <rect key="frame" x="109" y="35" width="176.66666666666669" height="280.66666666666669"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-G2-7Xa" customClass="CircleImage" customModule="iMonoCommute" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-G2-7Xa" customClass="CircleImage" customModule="iMonoCommute" customModuleProvider="target">
                                                 <rect key="frame" x="43.333333333333343" y="0.0" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="BYz-qD-QUh"/>
@@ -656,6 +656,7 @@
         <image name="addNewIcon" width="19" height="19"/>
         <image name="close" width="21" height="20"/>
         <image name="compose" width="21" height="24"/>
+        <image name="defaultProfileImage" width="102" height="102"/>
         <image name="feed-tabIcon" width="25" height="21"/>
         <image name="groups-tabIcon" width="25" height="23"/>
         <image name="me-tabIcon" width="25" height="25"/>

@@ -12,8 +12,8 @@ class LoginVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var emailTxtField: InsetTextField!
-    
     @IBOutlet weak var passwordTxtField: InsetTextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +25,15 @@ class LoginVC: UIViewController {
     @IBAction func signInButtonTapped(_ sender: Any) {
         
         if emailTxtField.text != nil && passwordTxtField.text != nil {
+            
+            // Try to sign in first
             AuthService.instance.loginUser(withEmail: emailTxtField.text!, andPassword: passwordTxtField.text!, loginComplete: { (success, oError) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
                 } else {
                     print("error: \(String(describing: oError))")
                 }
-                
+                // If signing in fails then try to register a new user
                 AuthService.instance.registerUser(withEmail: self.emailTxtField.text!, andPassword: self.passwordTxtField.text!, userCreationComplete: { (success, oError) in
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailTxtField.text!, andPassword: self.passwordTxtField.text!, loginComplete: { (success, nil) in

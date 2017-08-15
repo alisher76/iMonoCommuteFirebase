@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  Groups.swift
 //  iMonoCommute
 //
 //  Created by Alisher Abdukarimov on 8/14/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class GroupsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

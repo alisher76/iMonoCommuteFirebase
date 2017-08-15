@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  FeedVC.swift
 //  iMonoCommute
 //
 //  Created by Alisher Abdukarimov on 8/14/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FeedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0EA1FEBDA44400495B6FD4EA /* Pods_iMonoCommute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9023B93350627191E36E42 /* Pods_iMonoCommute.framework */; };
+		AC29F0C41F4275AF001C7961 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0C31F4275AF001C7961 /* CreatePostVC.swift */; };
+		AC29F0C61F427687001C7961 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0C51F427687001C7961 /* MeVC.swift */; };
 		AC2E37CA1F4222270096FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37C91F4222270096FAF5 /* AppDelegate.swift */; };
-		AC2E37CC1F4222270096FAF5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CB1F4222270096FAF5 /* FirstViewController.swift */; };
-		AC2E37CE1F4222270096FAF5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CD1F4222270096FAF5 /* SecondViewController.swift */; };
+		AC2E37CC1F4222270096FAF5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CB1F4222270096FAF5 /* FeedVC.swift */; };
+		AC2E37CE1F4222270096FAF5 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CD1F4222270096FAF5 /* GroupsVC.swift */; };
 		AC2E37D11F4222270096FAF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2E37CF1F4222270096FAF5 /* Main.storyboard */; };
 		AC2E37D31F4222270096FAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E37D21F4222270096FAF5 /* Assets.xcassets */; };
 		AC2E37D61F4222270096FAF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2E37D41F4222270096FAF5 /* LaunchScreen.storyboard */; };
@@ -28,10 +30,12 @@
 
 /* Begin PBXFileReference section */
 		9D9023B93350627191E36E42 /* Pods_iMonoCommute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMonoCommute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC29F0C31F4275AF001C7961 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		AC29F0C51F427687001C7961 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		AC2E37C61F4222270096FAF5 /* iMonoCommute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMonoCommute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2E37C91F4222270096FAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC2E37CB1F4222270096FAF5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		AC2E37CD1F4222270096FAF5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AC2E37CB1F4222270096FAF5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		AC2E37CD1F4222270096FAF5 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		AC2E37D01F4222270096FAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC2E37D21F4222270096FAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2E37D51F4222270096FAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,10 +114,12 @@
 		AC2E37DD1F4222850096FAF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC2E37CB1F4222270096FAF5 /* FirstViewController.swift */,
-				AC2E37CD1F4222270096FAF5 /* SecondViewController.swift */,
+				AC2E37CB1F4222270096FAF5 /* FeedVC.swift */,
+				AC2E37CD1F4222270096FAF5 /* GroupsVC.swift */,
 				AC2E37E81F422B8C0096FAF5 /* LoginVC.swift */,
 				AC2E37F21F4234DC0096FAF5 /* AuthVC.swift */,
+				AC29F0C31F4275AF001C7961 /* CreatePostVC.swift */,
+				AC29F0C51F427687001C7961 /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,14 +292,16 @@
 			files = (
 				AC2E37F31F4234DC0096FAF5 /* AuthVC.swift in Sources */,
 				AC2E37F51F4236630096FAF5 /* ShadowView.swift in Sources */,
-				AC2E37CE1F4222270096FAF5 /* SecondViewController.swift in Sources */,
+				AC29F0C41F4275AF001C7961 /* CreatePostVC.swift in Sources */,
+				AC2E37CE1F4222270096FAF5 /* GroupsVC.swift in Sources */,
 				AC2E37F71F423C730096FAF5 /* AuthService.swift in Sources */,
 				AC2E37ED1F422DDD0096FAF5 /* CircleImage.swift in Sources */,
 				AC2E37CA1F4222270096FAF5 /* AppDelegate.swift in Sources */,
 				AC2E37E91F422B8C0096FAF5 /* LoginVC.swift in Sources */,
 				AC2E37E71F422B470096FAF5 /* GradientView.swift in Sources */,
 				AC2E37EB1F422DD10096FAF5 /* RoundedButton.swift in Sources */,
-				AC2E37CC1F4222270096FAF5 /* FirstViewController.swift in Sources */,
+				AC29F0C61F427687001C7961 /* MeVC.swift in Sources */,
+				AC2E37CC1F4222270096FAF5 /* FeedVC.swift in Sources */,
 				AC2E37E51F4225C10096FAF5 /* DataService.swift in Sources */,
 				AC2E37F11F4233B60096FAF5 /* InsetTextField.swift in Sources */,
 			);

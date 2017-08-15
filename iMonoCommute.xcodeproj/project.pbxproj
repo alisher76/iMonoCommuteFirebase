@@ -13,6 +13,9 @@
 		AC29F0C81F42798D001C7961 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0C71F42798D001C7961 /* UIViewExtension.swift */; };
 		AC29F0CA1F427D92001C7961 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0C91F427D92001C7961 /* Message.swift */; };
 		AC29F0CC1F4280C6001C7961 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0CB1F4280C6001C7961 /* FeedCell.swift */; };
+		AC29F0CE1F43447E001C7961 /* MeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0CD1F43447E001C7961 /* MeCell.swift */; };
+		AC29F0D21F43504D001C7961 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0D11F43504D001C7961 /* UserCell.swift */; };
+		AC29F0D41F43530E001C7961 /* CreateNewGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29F0D31F43530E001C7961 /* CreateNewGroupVC.swift */; };
 		AC2E37CA1F4222270096FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37C91F4222270096FAF5 /* AppDelegate.swift */; };
 		AC2E37CC1F4222270096FAF5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CB1F4222270096FAF5 /* FeedVC.swift */; };
 		AC2E37CE1F4222270096FAF5 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E37CD1F4222270096FAF5 /* GroupsVC.swift */; };
@@ -38,6 +41,9 @@
 		AC29F0C71F42798D001C7961 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AC29F0C91F427D92001C7961 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		AC29F0CB1F4280C6001C7961 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		AC29F0CD1F43447E001C7961 /* MeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeCell.swift; sourceTree = "<group>"; };
+		AC29F0D11F43504D001C7961 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		AC29F0D31F43530E001C7961 /* CreateNewGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGroupVC.swift; sourceTree = "<group>"; };
 		AC2E37C61F4222270096FAF5 /* iMonoCommute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMonoCommute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2E37C91F4222270096FAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC2E37CB1F4222270096FAF5 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				AC2E37F21F4234DC0096FAF5 /* AuthVC.swift */,
 				AC29F0C31F4275AF001C7961 /* CreatePostVC.swift */,
 				AC29F0C51F427687001C7961 /* MeVC.swift */,
+				AC29F0D31F43530E001C7961 /* CreateNewGroupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +154,8 @@
 				AC2E37F01F4233B60096FAF5 /* InsetTextField.swift */,
 				AC2E37F41F4236630096FAF5 /* ShadowView.swift */,
 				AC29F0CB1F4280C6001C7961 /* FeedCell.swift */,
+				AC29F0CD1F43447E001C7961 /* MeCell.swift */,
+				AC29F0D11F43504D001C7961 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC29F0D41F43530E001C7961 /* CreateNewGroupVC.swift in Sources */,
 				AC29F0C81F42798D001C7961 /* UIViewExtension.swift in Sources */,
 				AC2E37F31F4234DC0096FAF5 /* AuthVC.swift in Sources */,
 				AC29F0CC1F4280C6001C7961 /* FeedCell.swift in Sources */,
@@ -307,7 +317,9 @@
 				AC2E37CE1F4222270096FAF5 /* GroupsVC.swift in Sources */,
 				AC2E37F71F423C730096FAF5 /* AuthService.swift in Sources */,
 				AC2E37ED1F422DDD0096FAF5 /* CircleImage.swift in Sources */,
+				AC29F0D21F43504D001C7961 /* UserCell.swift in Sources */,
 				AC2E37CA1F4222270096FAF5 /* AppDelegate.swift in Sources */,
+				AC29F0CE1F43447E001C7961 /* MeCell.swift in Sources */,
 				AC2E37E91F422B8C0096FAF5 /* LoginVC.swift in Sources */,
 				AC2E37E71F422B470096FAF5 /* GradientView.swift in Sources */,
 				AC2E37EB1F422DD10096FAF5 /* RoundedButton.swift in Sources */,

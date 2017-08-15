@@ -64,4 +64,33 @@ class DataService {
             handler(messageArray)
         }
     }
+    
+    // MARK: Get User Name
+    func getUserName(forUID uid: String, handler: @escaping (_ username: String) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (_userSnapshot) in
+            guard let userSnapshot = _userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for user in userSnapshot {
+                if user.key == uid {
+                handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
+    // MARK: Get Email
+    func getEmailForSearchQuery(query: String, handler: @escaping (_ result: [String]) -> ()) {
+        var emailArray = [String]()
+        REF_USERS.observe(.value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if email.contains(query) && email != Auth.auth().currentUser?.email {
+                    emailArray.append(email)
+                }
+            }
+            handler(emailArray)
+        }
+    }
 }

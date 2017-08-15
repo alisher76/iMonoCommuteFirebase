@@ -21,6 +21,7 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        nameLabel.text = Auth.auth().currentUser?.email
         sendButton.bindToKeyboard()
     }
     @IBAction func sendButtonTapped(_ sender: Any) {

@@ -20,12 +20,13 @@ class FeedVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DataService.instance.getAllFeedMessages { (messages) in
-            self.messageArray = messages
+            self.messageArray = messages.reversed()
             self.tableView.reloadData()
         }
     }
@@ -44,8 +45,12 @@ extension FeedVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell") as? FeedCell {
-            cell.messageLabel.text = messageArray[indexPath.row].content
-            cell.nameLabel.text = messageArray[indexPath.row].senderId
+            let message = messageArray[indexPath.row]
+            
+            DataService.instance.getUserName(forUID: message.senderId, handler: { (userName) in
+                cell.nameLabel.text = userName
+                cell.messageLabel.text = message.content
+            })
             return cell
         } else {
             return UITableViewCell()

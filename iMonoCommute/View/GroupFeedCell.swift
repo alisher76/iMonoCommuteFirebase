@@ -18,7 +18,10 @@ class GroupFeedCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
     
-
+    func configureCell(withContent content: String, withEmail email: String, withProfileImage profileImage: String) {
+        self.messageLabel.text = content
+        self.nameLabel.text = email
+        self.profileImage.image = UIImage(named: profileImage)
+    }
 }

@@ -345,7 +345,6 @@
                                             <outlet property="groupDescription" destination="Z8d-hV-hys" id="JFh-Va-BkQ"/>
                                             <outlet property="groupTitle" destination="a7Z-QS-6sO" id="VYj-XC-UeX"/>
                                             <outlet property="usersLabel" destination="MRm-LT-X0J" id="1Wk-8N-tpD"/>
-                                            <segue destination="iUz-Bb-wWF" kind="show" id="nVm-57-ESd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -578,7 +577,7 @@
         <!--Group FeedVC-->
         <scene sceneID="mJw-UM-jcH">
             <objects>
-                <viewController id="iUz-Bb-wWF" customClass="GroupFeedVC" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupFeedVC" id="iUz-Bb-wWF" customClass="GroupFeedVC" customModule="iMonoCommute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VmT-LE-VoR"/>
                         <viewControllerLayoutGuide type="bottom" id="m2o-5M-GBR"/>
